@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rest Countries</title>
+<link rel="stylesheet" href="./style.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fafafa;
+            background-size: cover;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+        .header {
+            background-color: white;
+            box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 100px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 99;
+        }
+        .header-btn {
+            padding: 10px 25px;
+            border: none;
+            background-color: #3498db;
+            color:white;
+            font-size: 18px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            transition: all 0.2s ease-in-out;
+        }
+        .header-btn:hover {
+            background-color: #2980b9;
+        }
+        .header-btn:active{
+            box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+        .form-section{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+        }
+        .search-bar {
+            background-color: white;
+            display: flex;
+            gap: 15px;
+            height: 40px;
+            width: 300px;
+            box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+        }
+        input {
+            width: 100%;
+            font-size: 18px;
+            border: none;
+        }
+        input:focus{
+            outline: none;
+        }
+        .select {
+            width: 200px;
+        }
+        select {
+            width: 100%;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: white;
+            width: 250px;
+            box-shadow: 0px 4px 8px rgba(34, 60, 80, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .content {
+            padding: 15px;
+        }
+        .content h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .content p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .title1 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h2>Where in the world?</h2>
+        <button class="header-btn">Dark Mode</button>
+    </header>
+
+    <section class="container">
+        <div class="form-section">
+            <div class="search-bar">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path fill="#454e5f" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </div>
+                <input type="text" id="search-input" placeholder="Search for a country..." />
+            </div>
+
+Sevara Mansur, [11/6/2024 3:37 AM]
+<div class="select">
+                <select name="" id="">
+                    <option value="">Africa</option>
+                    <option value="">Europe</option>
+                    <option value="">America</option>
+                    <option value="">Asia</option>
+                </select>
+            </div>
+        </div>
+
+        <main class="cards">
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1674591172352-0af9308f0dac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZsYWd8ZW58MHx8MHx8fDA%3D" alt="Country Image 1">
+                <div class="content">
+                    <h2>Afghanistan</h2>
+                    <p><span class="title1">Population:</span> 4252342</p>
+                    <p><span class="title1">Region:</span> Asia</p>
+                    <p><span class="title1">Capital:</span> Kabul</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1674591172352-0af9308f0dac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZsYWd8ZW58MHx8MHx8fDA%3D" alt="Country Image 2">
+                <div class="content">
+                    <h2>France</h2>
+                    <p><span class="title1">Population:</span> 67081000</p>
+                    <p><span class="title1">Region:</span> Europe</p>
+                    <p><span class="title1">Capital:</span> Paris</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1674591172352-0af9308f0dac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZsYWd8ZW58MHx8MHx8fDA%3D" alt="Country Image 3">
+                <div class="content">
+                    <h2>Brazil</h2>
+                    <p><span class="title1">Population:</span> 212559417</p>
+                    <p><span class="title1">Region:</span> America</p>
+                    <p><span class="title1">Capital:</span> Brasília</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1674591172352-0af9308f0dac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGZsYWd8ZW58MHx8MHx8fDA%3D" alt="Country Image 4">
+                <div class="content">
+                    <h2>Japan</h2>
+                    <p><span class="title1">Population:</span> 125800000</p>
+                    <p><span class="title1">Region:</span> Asia</p>
+                    <p><span class="title1">Capital:</span> Tokyo</p>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
